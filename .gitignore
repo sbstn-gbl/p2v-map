@@ -1,0 +1,47 @@
+# archives
+*.tar.gz
+
+# data
+*.csv
+*.tsv
+
+# image files
+*.png
+*.jpg
+*.pdf
+*.gif
+*.svg
+*.ico
+
+# output files
+*.html
+*.out
+
+# swap files
+*.pyc
+*~
+*.swp
+*.bak
+
+# python
+.env
+.venv
+env/
+venv/
+ENV/
+.ipynb_checkpoints
+/build/
+/pylearn2.egg-info/
+
+# mkdocs documentation
+/site
+
+# binary data
+*.npy
+*.pkl
+*.pickle
+*.db
+
+# mac
+.DS_Store
+
