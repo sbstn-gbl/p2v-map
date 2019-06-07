@@ -1,0 +1,19 @@
+{
+    "tsne_data_kwargs": {
+        "epoch": 4,
+        "batch": 3000,
+        "l2norm": true,
+        "pca": null,
+        "path_results": "./results/p2v-map-example"
+    },
+    "tsne_kwargs": {
+        "random_state": 1,
+        "n_components": 2,
+        "n_iter": 4000,
+        "perplexity": 15,
+        "init": "pca",
+        "angle": 0.5,
+        "verbose": 0
+    }
+}
+

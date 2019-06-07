@@ -1,0 +1,8 @@
+{
+    "variable_basket": "basket_hash",
+    "variable_values": ["j"],
+    "batch_size": 1000,
+    "shuffle": true,
+    "n_negative_samples": 20,
+    "power": 0.75
+}
