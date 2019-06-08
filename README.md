@@ -4,7 +4,7 @@ The code in this repository implements P2V-MAP as proposed in
 
 > Gabel, S., Guhl, D., & Klapper, D. (2019). P2V-MAP: Mapping Market Structures for Large Retail Assortments. *Journal of Marketing Research* (forthcoming).
 
-Please cite the paper if you use this software.
+Please cite the paper if you use this software. Please note that all code and data is provided here as is and without any warranty or certification of any kind, express or implied.
 
 
 ## System requirements
