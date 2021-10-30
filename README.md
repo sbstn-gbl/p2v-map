@@ -85,7 +85,7 @@ The training and validation loss of the P2V model can be visualized using Tensor
 Makefile target `make tb` launches a TensorBoard server that looks like this:
 
 <p align="center">
-<img src="/source/tensorboard.png" width="800">
+<img src="./source/tensorboard.png" width="800">
 </p>
 
 The product embedding that is the result of the P2V model can be visualized with the
@@ -93,7 +93,7 @@ The product embedding that is the result of the P2V model can be visualized with
 the following embedding heat map using the `plotly` library:
 
 <p align="center">
-<img src="/source/embedding.png" width="800">
+<img src="./source/embedding.png" width="800">
 </p>
 
 The product map that is the result of applying `t-SNE` to the product embedding can be
@@ -102,7 +102,7 @@ method `plot_tsne_map` produces the following embedding scatter plot using the `
 library:
 
 <p align="center">
-<img src="/source/map.png" width="800">
+<img src="./source/map.png" width="800">
 </p>
 
 All Plotly results allow you to track the training progress over epochs and batches.
