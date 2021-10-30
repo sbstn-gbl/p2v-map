@@ -22,8 +22,6 @@ from plotly.offline import iplot
 
 T = TypeVar("T")
 
-warnings.simplefilter(action="error", category=FutureWarning)
-
 
 def read_yaml(x: str) -> dict:
     """
@@ -523,8 +521,10 @@ class DashboardP2V(object):
                 config_copy["init"] = "pca"
             else:
                 config_copy["init"] = self.plot_data["tsne"][i - 1][["x", "y"]].values
-            tsne = sklearn.manifold.TSNE(**config_copy)
-            X = tsne.fit_transform(self.plot_data["wi"][i])
+            with warnings.catch_warnings():
+                warnings.filterwarnings("ignore")
+                tsne = sklearn.manifold.TSNE(**config_copy)
+                X = tsne.fit_transform(self.plot_data["wi"][i])
             X = X - X.mean(axis=0)
             X = X / X.std(axis=0)
             df = product.copy()

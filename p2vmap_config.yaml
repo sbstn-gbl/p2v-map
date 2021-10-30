@@ -36,3 +36,4 @@ tsne:
     n_components: 2
     perplexity: 4
     init: "pca"
+    learning_rate: "auto"
