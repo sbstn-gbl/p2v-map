@@ -4,6 +4,8 @@
 # data
 *.csv
 *.tsv
+*.npy
+results
 
 # image files
 *.png

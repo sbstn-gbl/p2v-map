@@ -1,0 +1,38 @@
+# paths
+paths:
+    data: data
+    results: results
+
+# step 1
+data:
+    data_streamer:
+        variable_basket: basket
+        variable_product: product
+        batch_size: 20000
+        n_negative_samples: 10
+        power: 0.75
+        shuffle: False
+        allow_context_collisions: False
+
+# step 2
+p2v:
+    data-loader:
+        validation_size: 0.05
+        config_train:
+            batch_size: 1024
+            shuffle: True
+            drop_last: True
+        config_validation:
+            batch_size: 4096
+            shuffle: False
+            drop_last: False
+    model:
+        size: 30
+    trainer:
+        epochs: 3
+
+# step 3
+tsne:
+    n_components: 2
+    perplexity: 4
+    init: "pca"
