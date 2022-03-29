@@ -41,7 +41,7 @@ jsonschema==4.1.2
 jupyter-client==7.0.6
 jupyter-core==4.9.1
 jupyter-dash==0.4.0
-jupyter-server==1.11.1
+jupyter-server==1.15.4
 jupyterlab==3.2.1
 jupyterlab-code-formatter==1.4.10
 jupyterlab-pygments==0.1.2
